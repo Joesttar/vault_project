@@ -18,7 +18,7 @@ from django.core.exceptions import ImproperlyConfigured
 load_dotenv()
 
 # Ahora podemos leer cualquier variable usando os.getenv()
-ENCRYPTION_KEY = os.getenv()
+ENCRYPTION_KEY = os.getenv('ENCRYPTION_KEY')
 
 # Valudacion Fail-Fast
 if not ENCRYPTION_KEY:
